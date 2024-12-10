@@ -24,10 +24,10 @@ export default function WeatherApp() {
   const formattedDate = today.toLocaleDateString(); // You can customize the format if needed
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-500 to-blue-300 p-6">
-      <h1 className="text-center text-5xl font-bold text-white mb-6">Weather App</h1>
-      <h3 className="text-center text-xl font-medium text-white mb-6">{`${formattedDate}`}</h3>
-      <p className="text-center text-xl font-medium text-white mb-6">By aseem</p>
+    <div className="min-h-screen bg-gradient-to-b from-blue-200 to-red-300 p-6">
+      <h1 className="text-center text-5xl font-bold text-red-500 mb-6">Weather App</h1>
+      <h3 className="text-center text-xl font-medium text-red mb-6">{`${formattedDate}`}</h3>
+      <p className="text-center text-xl font-medium text-red mb-6">By Aseem</p>
       <hr></hr>
       <SearchBar onSearch={fetchWeather} />
       {weatherData && <WeatherCard data={weatherData} />}
