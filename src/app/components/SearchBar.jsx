@@ -48,13 +48,14 @@ const SearchBar = ({ onSearch }) => {
           onChange={handleChange}
           onKeyPress={(e) => e.key === 'Enter' && handleSearch(e)} // Handle enter key
           placeholder="Search for a city"
-          className="mt-16 w-10/12 p-4 pl-1 rounded-lg border border-white-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="mt-16 w-full
+          p-4 pl-1 rounded-lg border border-white-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
         {/* Search button */}
         <button
           onClick={handleSearch}
-          className="mt-4 bg-green-500 text-white px-5 py-3 rounded-lg"
+          className="mt-4 bg-red-500 text-white px-5 py-3 rounded-lg"
         >
           Search
         </button>
